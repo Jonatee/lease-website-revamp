@@ -88,20 +88,24 @@ const footerGroups = [
     title: 'Compliance',
     items: ['KYC Form', 'AML Protocol'],
   },
+  {
+    title: 'Socials',
+    items: ['LinkedIn', 'WhatsApp', 'Instagram'],
+  }
 ];
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen overflow-x-clip px-0 py-0 text-[#333333]">
-      <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-white/30 blur-3xl" />
-        <div className="absolute right-0 top-1/3 h-96 w-96 rounded-full bg-[#ffd500]/10 blur-3xl" />
-        <div className="absolute bottom-0 left-1/3 h-80 w-80 rounded-full bg-white/60 blur-3xl" />
-      </div>
+    <div className="relative min-h-screen text-[#333333]">
+      <SiteHeader />
+      <main className="relative min-h-screen overflow-x-clip px-2 pb-4 pt-28">
+        <div aria-hidden className="pointer-events-none absolute inset-0">
+          <div className="absolute left-0 top-20 h-72 w-72 rounded-full bg-white/30 blur-3xl" />
+          <div className="absolute right-0 top-1/3 h-96 w-96 rounded-full bg-[#ffd500]/10 blur-3xl" />
+          <div className="absolute bottom-0 left-1/3 h-80 w-80 rounded-full bg-white/60 blur-3xl" />
+        </div>
 
-      <div className="relative w-full bg-white p-4 sm:p-6 lg:p-8">
-        <SiteHeader />
-
+        <div className="relative w-full px-4 pt-6 sm:px-6 lg:px-8">
         <section className="pt-6 lg:pt-8">
           <div className="rounded-[24px] bg-[linear-gradient(180deg,#f7f8f9_0%,#ffffff_52%,#f1f1f1_100%)] px-5 py-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.9)] sm:px-8 sm:py-8 lg:px-10 lg:py-10">
             <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
@@ -113,10 +117,13 @@ export default function Home() {
                   Purpose-Built to Bridge Capital
                 </h1>
                 <p className="mt-5 max-w-2xl text-base text-[#475569] sm:text-lg">
-                  We are a trusted bridge between capital and opportunity, enabling entrepreneurs, investors, and
-                  institutions to access high-quality investment opportunities across global markets. With a focus on
-                  real estate, private equity, and fund placements, we help family offices and high-net-worth
-                  individuals deploy and raise capital through a seamless, strategic model.
+                  We are a trusted bridge between capital and opportunity,
+                  enabling entrepreneurs, investors, and institutions to access
+                  high-quality investment opportunities across global markets.
+                  With a focus on real estate, private equity, and fund
+                  placements, we help family offices and high-net-worth
+                  individuals deploy and raise capital through a seamless,
+                  strategic model.
                 </p>
                 <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row">
                   <a
@@ -133,8 +140,9 @@ export default function Home() {
                   </a>
                 </div>
                 <p className="mt-4 max-w-xl text-sm leading-6 text-[#64748b]">
-                  For landlords, developers, and credible tenants seeking well-positioned commercial and mixed-use
-                  opportunities across Nigeria.
+                  For landlords, developers, and credible tenants seeking
+                  well-positioned commercial and mixed-use opportunities across
+                  Nigeria.
                 </p>
               </div>
 
@@ -152,22 +160,30 @@ export default function Home() {
                   Avinell x Cantagali
                 </div>
                 <div className="absolute bottom-5 left-5 right-5 rounded-[18px] bg-[rgba(255,255,255,0.94)] p-4 backdrop-blur">
-                  <div className="text-xs uppercase tracking-[0.22em] text-[#64748b]">Focus</div>
+                  <div className="text-xs uppercase tracking-[0.22em] text-[#64748b]">
+                    Focus
+                  </div>
                   <p className="mt-2 text-lg font-medium text-[#333333]">
-                    Real estate, private equity, fund placements, and leasing & asset stabilization.
+                    Real estate, private equity, fund placements, and leasing &
+                    asset stabilization.
                   </p>
                 </div>
               </div>
             </div>
-
           </div>
         </section>
 
-        <section id="about" className="grid gap-8 px-1 py-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:px-2">
+        <section
+          id="about"
+          className="grid gap-8 px-1 py-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:px-2"
+        >
           <div>
-            <p className="text-sm uppercase tracking-[0.24em] text-[#64748b]">About</p>
+            <p className="text-sm uppercase tracking-[0.24em] text-[#64748b]">
+              About
+            </p>
             <h2 className="mt-3 max-w-xl text-4xl font-semibold tracking-[-0.04em] text-[#222222] sm:text-5xl">
-              By doing so, we elevate Africa&apos;s presence in global investing.
+              By doing so, we elevate Africa&apos;s presence in global
+              investing.
             </h2>
             <a
               href="#services"
@@ -178,24 +194,32 @@ export default function Home() {
           </div>
           <div className="max-w-2xl text-lg leading-8 text-[#475569]">
             <p>
-              Our work empowers African leaders to shape and participate in the world&apos;s most influential capital
-              flows, with strategy and local context at the centre of every mandate.
+              Our work empowers African leaders to shape and participate in the
+              world&apos;s most influential capital flows, with strategy and
+              local context at the centre of every mandate.
             </p>
           </div>
         </section>
 
-        <section id="services" className="grid items-start gap-6 lg:grid-cols-2">
+        <section
+          id="services"
+          className="grid items-start gap-6 lg:grid-cols-2"
+        >
           <article className="overflow-hidden rounded-[24px] bg-[#f1f1f1] p-6 shadow-sm ring-1 ring-black/10">
-            <h3 className="text-3xl font-semibold tracking-[-0.03em] text-[#222222]">Advise</h3>
+            <h3 className="text-3xl font-semibold tracking-[-0.03em] text-[#222222]">
+              Advise
+            </h3>
             <p className="mt-5 text-sm leading-7 text-[#475569]">
-              We advise Nigerian asset owners, developers, investors, and institutions at the earliest and most
-              critical stages of the capital cycle - where strategy, structure, and local context make the
-              difference.
+              We advise Nigerian asset owners, developers, investors, and
+              institutions at the earliest and most critical stages of the
+              capital cycle - where strategy, structure, and local context make
+              the difference.
             </p>
             <p className="mt-4 text-sm leading-7 text-[#475569]">
-              From sourcing and assessing opportunities across Nigeria&apos;s major cities and emerging markets, to
-              structuring compliant investment vehicles and cross-border transactions, we combine deep local market
-              knowledge with global best practice.
+              From sourcing and assessing opportunities across Nigeria&apos;s
+              major cities and emerging markets, to structuring compliant
+              investment vehicles and cross-border transactions, we combine deep
+              local market knowledge with global best practice.
             </p>
             <div className="mt-5 text-sm font-semibold uppercase tracking-[0.2em] text-[#64748b]">
               Our advisory capabilities include:
@@ -213,12 +237,14 @@ export default function Home() {
           <article className="rounded-[24px] bg-[#333333] p-6 text-white shadow-sm ring-1 ring-black/10">
             <h3 className="text-3xl font-semibold tracking-[-0.03em]">Plan</h3>
             <p className="mt-5 text-sm leading-7 text-white/78">
-              Clarity leads to confidence. At Avinell, we move beyond high-level advice to co-design actionable plans
-              - tailored to your capital objectives.
+              Clarity leads to confidence. At Avinell, we move beyond high-level
+              advice to co-design actionable plans - tailored to your capital
+              objectives.
             </p>
             <p className="mt-4 text-sm leading-7 text-white/78">
-              Whether you&apos;re preparing a capital raise, structuring a deployment vehicle, or aligning
-              multi-jurisdictional interests, we translate strategy into a precise, step-by-step blueprint.
+              Whether you&apos;re preparing a capital raise, structuring a
+              deployment vehicle, or aligning multi-jurisdictional interests, we
+              translate strategy into a precise, step-by-step blueprint.
             </p>
             <div className="mt-6 text-sm font-semibold uppercase tracking-[0.2em] text-white/55">
               Our planning capabilities include:
@@ -234,14 +260,18 @@ export default function Home() {
           </article>
 
           <article className="rounded-[24px] bg-[#333333] p-6 text-white shadow-sm ring-1 ring-black/10 lg:col-span-2">
-            <h3 className="text-3xl font-semibold tracking-[-0.03em]">Execute</h3>
+            <h3 className="text-3xl font-semibold tracking-[-0.03em]">
+              Execute
+            </h3>
             <p className="mt-5 text-sm leading-7 text-white/78">
-              This is where capital moves - and results happen. At Avinell, we activate our network to deliver on
-              what&apos;s been strategically designed and structurally planned.
+              This is where capital moves - and results happen. At Avinell, we
+              activate our network to deliver on what&apos;s been strategically
+              designed and structurally planned.
             </p>
             <p className="mt-4 text-sm leading-7 text-white/78">
-              Whether deploying capital into prime opportunities, raising funds for credible ventures, or disposing
-              of assets for maximum return - we coordinate, align, and execute with discipline.
+              Whether deploying capital into prime opportunities, raising funds
+              for credible ventures, or disposing of assets for maximum return -
+              we coordinate, align, and execute with discipline.
             </p>
             <div className="mt-6 text-sm font-semibold uppercase tracking-[0.2em] text-white/55">
               Our execution capabilities include:
@@ -263,17 +293,20 @@ export default function Home() {
         >
           <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div>
-              <p className="text-sm uppercase tracking-[0.24em] text-white/55">Leasing &amp; Asset Stabilization</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-white/55">
+                Leasing &amp; Asset Stabilization
+              </p>
               <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] sm:text-5xl">
                 We also work with landlords and developers across Nigeria.
               </h2>
               <p className="mt-5 text-base leading-8 text-white/78">
-                We also work with landlords and developers across Nigeria to lease commercial and mixed-use assets to
-                credible, high-quality tenants - securing optimal terms, reducing vacancy risk, and enhancing
-                long-term asset value.
+                We also work with landlords and developers across Nigeria to
+                lease commercial and mixed-use assets to credible, high-quality
+                tenants - securing optimal terms, reducing vacancy risk, and
+                enhancing long-term asset value.
               </p>
               <a
-                href="https://avinellcantagali.com/lease/"
+                href="lease/"
                 className="mt-6 inline-flex items-center justify-center rounded-full bg-[#ffd500] px-6 py-3.5 text-sm font-semibold text-[#333333] transition-transform hover:-translate-y-0.5"
               >
                 Explore Leasing Services
@@ -281,19 +314,31 @@ export default function Home() {
             </div>
 
             <div className="overflow-hidden rounded-[20px] bg-white p-4 text-[#333333]">
-              <div className="text-sm uppercase tracking-[0.22em] text-[#64748b]">Cross-border positioning</div>
+              <div className="text-sm uppercase tracking-[0.22em] text-[#64748b]">
+                Cross-border positioning
+              </div>
               <p className="mt-4 text-lg leading-8 text-[#475569]">
-                From institutional tenant placement and lease structuring to build-to-lease strategy and cross-border
-                positioning, our leasing approach balances local market demand with investor expectations.
+                From institutional tenant placement and lease structuring to
+                build-to-lease strategy and cross-border positioning, our
+                leasing approach balances local market demand with investor
+                expectations.
               </p>
               <div className="mt-6 grid grid-cols-2 gap-4">
-                  <div className="rounded-[16px] bg-[#f7f8f9] p-4 shadow-sm">
-                    <div className="text-sm uppercase tracking-[0.18em] text-[#64748b]">Tenant placement</div>
-                  <div className="mt-2 text-base font-medium">Credible, high-quality tenants</div>
+                <div className="rounded-[16px] bg-[#f7f8f9] p-4 shadow-sm">
+                  <div className="text-sm uppercase tracking-[0.18em] text-[#64748b]">
+                    Tenant placement
+                  </div>
+                  <div className="mt-2 text-base font-medium">
+                    Credible, high-quality tenants
+                  </div>
                 </div>
                 <div className="rounded-[16px] bg-[#f7f8f9] p-4 shadow-sm">
-                  <div className="text-sm uppercase tracking-[0.18em] text-[#64748b]">Asset value</div>
-                  <div className="mt-2 text-base font-medium">Enhancing long-term asset value</div>
+                  <div className="text-sm uppercase tracking-[0.18em] text-[#64748b]">
+                    Asset value
+                  </div>
+                  <div className="mt-2 text-base font-medium">
+                    Enhancing long-term asset value
+                  </div>
                 </div>
               </div>
             </div>
@@ -303,21 +348,26 @@ export default function Home() {
         <section id="insights" className="py-16">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <div>
-              <p className="text-sm uppercase tracking-[0.24em] text-[#64748b]">News and insights</p>
+              <p className="text-sm uppercase tracking-[0.24em] text-[#64748b]">
+                News and insights
+              </p>
               <h2 className="mt-3 text-4xl font-semibold tracking-[-0.04em] text-[#222222] sm:text-5xl">
                 News and insights
               </h2>
             </div>
             <p className="max-w-2xl text-base leading-7 text-[#475569]">
-              Selected commentary from Avinell&apos;s original site, presented here with the same language and a
-              cleaner editorial layout.
+              Selected commentary from Avinell&apos;s original site, presented
+              here with the same language and a cleaner editorial layout.
             </p>
           </div>
 
           <InsightsCarousel cards={insightCards} />
         </section>
 
-        <footer id="contact" className="mt-2 rounded-[24px] bg-[#333333] px-6 py-8 text-white sm:px-8">
+        <footer
+          id="contact"
+          className="mt-2 rounded-[24px] bg-[#333333] px-6 py-8 text-white sm:px-8"
+        >
           <div className="grid gap-8 lg:grid-cols-[1.2fr_auto_auto_auto] lg:items-start">
             <div>
               <Image
@@ -331,10 +381,16 @@ export default function Home() {
                 CRE Advisory Firm - AvinellCantagali
               </p>
               <div className="mt-4 flex flex-col gap-3 text-sm text-white/75">
-                <a href="mailto:hello@avinellcantagali.com" className="transition-colors hover:text-white">
+                <a
+                  href="mailto:hello@avinellcantagali.com"
+                  className="transition-colors hover:text-white"
+                >
                   hello@avinellcantagali.com
                 </a>
-                <a href="tel:+16285009670" className="transition-colors hover:text-white">
+                <a
+                  href="tel:+16285009670"
+                  className="transition-colors hover:text-white"
+                >
                   +1 (628) 500-9670
                 </a>
                 <span>Lagos, Nigeria</span>
@@ -343,7 +399,9 @@ export default function Home() {
 
             {footerGroups.map((group) => (
               <div key={group.title}>
-                <div className="text-sm uppercase tracking-[0.22em] text-white/50">{group.title}</div>
+                <div className="text-sm uppercase tracking-[0.22em] text-white/50">
+                  {group.title}
+                </div>
                 <div className="mt-4 flex flex-col gap-3 text-sm text-white/75">
                   {group.items.map((item) => (
                     <span key={item}>{item}</span>
@@ -359,5 +417,6 @@ export default function Home() {
         </footer>
       </div>
     </main>
+  </div>
   );
 }
