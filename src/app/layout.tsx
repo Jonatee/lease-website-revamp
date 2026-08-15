@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { Manrope, Plus_Jakarta_Sans } from "next/font/google";
+import { DM_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const manrope = Manrope({
+const dmSans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-body",
+  weight: ["400", "500", "600", "700"],
 });
 
-const plusJakarta = Plus_Jakarta_Sans({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-heading",
-  weight: ["400", "500", "600", "700", "800"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -37,7 +38,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en-US"
-      className={`${manrope.variable} ${plusJakarta.variable} h-full antialiased`}
+      className={`${dmSans.variable} ${spaceGrotesk.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>

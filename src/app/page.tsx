@@ -106,17 +106,16 @@ export default function Home() {
         </div>
 
         <div className="relative w-full px-4 pt-6 sm:px-6 lg:px-8">
-        <section className="pt-6 lg:pt-8">
-          <div className="rounded-[24px] bg-[linear-gradient(180deg,#f7f8f9_0%,#ffffff_52%,#f1f1f1_100%)] px-5 py-6 shadow-[inset_0_1px_0_rgba(255,255,255,0.9)] sm:px-8 sm:py-8 lg:px-10 lg:py-10">
-            <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
-              <div className="mx-auto max-w-2xl lg:mx-0">
-                <span className="inline-flex rounded-full border border-black/10 bg-white px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-[#64748b] backdrop-blur">
+          <section className="pt-6 lg:pt-8">
+            <div className="overflow-hidden rounded-[28px] bg-white px-5 pb-5 pt-10 shadow-[inset_0_1px_0_rgba(255,255,255,0.9)] sm:px-8 sm:pb-8 sm:pt-12 lg:px-12 lg:pb-10 lg:pt-14">
+              <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
+                <span className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[#64748b]">
                   Capital Advisory | Lagos
                 </span>
-                <h1 className="mt-6 text-4xl font-semibold tracking-[-0.05em] text-[#222222] sm:text-5xl lg:text-7xl">
+                <h1 className="mt-5 max-w-3xl text-4xl font-semibold leading-[1] tracking-[-0.06em] text-[#222222] sm:text-5xl lg:text-6xl">
                   Purpose-Built to Bridge Capital
                 </h1>
-                <p className="mt-5 max-w-2xl text-base text-[#475569] sm:text-lg">
+                <p className="mt-5 max-w-2xl text-base leading-7 text-[#475569] sm:text-lg sm:leading-8">
                   We are a trusted bridge between capital and opportunity,
                   enabling entrepreneurs, investors, and institutions to access
                   high-quality investment opportunities across global markets.
@@ -125,57 +124,52 @@ export default function Home() {
                   individuals deploy and raise capital through a seamless,
                   strategic model.
                 </p>
-                <div className="mt-8 flex flex-col items-start gap-3 sm:flex-row">
+                <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row">
                   <a
                     href="lease/"
-                    className="inline-flex items-center justify-center rounded-full bg-[#ffd500] px-6 py-3.5 text-sm font-semibold text-[#333333] shadow-[0_10px_28px_rgba(255,213,0,0.24)] transition-transform hover:-translate-y-0.5"
+                    className="inline-flex items-center justify-center rounded-full bg-[#ffd500] px-7 py-3.5 text-sm font-semibold text-[#333333] shadow-[0_10px_28px_rgba(255,213,0,0.24)] transition-transform duration-200 hover:-translate-y-0.5"
                   >
-                    Explore Lease Opportunities
+                    Explore Lease Opportunities <span className="ml-2" aria-hidden>→</span>
                   </a>
                   <a
                     href="#services"
-                    className="inline-flex items-center justify-center rounded-full border border-[#333333]/20 bg-white px-6 py-3.5 text-sm font-semibold text-[#333333] transition-colors hover:bg-[#f1f1f1]"
+                    className="text-sm font-semibold text-[#475569] underline decoration-[#ffd500] decoration-2 underline-offset-8 transition-colors duration-200 hover:text-[#333333]"
                   >
                     Explore Advisory Services
                   </a>
                 </div>
-                <p className="mt-4 max-w-xl text-sm leading-6 text-[#64748b]">
+                <p className="mt-5 max-w-xl text-sm leading-6 text-[#64748b]">
                   For landlords, developers, and credible tenants seeking
                   well-positioned commercial and mixed-use opportunities across
                   Nigeria.
                 </p>
               </div>
 
-              <div className="relative min-h-[340px] overflow-hidden rounded-[24px] bg-[#333333] shadow-2xl lg:min-h-[560px]">
+              <div className="relative mt-8 aspect-[4/3] overflow-hidden rounded-[22px] bg-[#333333] shadow-[0_18px_50px_rgba(51,51,51,0.16)] sm:mt-10 sm:aspect-[16/8] lg:mt-12">
                 <Image
                   src="/images/Advisory.jpg"
-                  alt="Commercial Real Estate"
+                  alt="Commercial real estate advisory meeting room"
                   fill
                   priority
-                  sizes="(min-width: 1024px) 42vw, 100vw"
-                  className="object-cover opacity-95"
+                  sizes="(min-width: 1024px) 90vw, 100vw"
+                  className="object-cover"
                 />
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(51,51,51,0.04)_0%,rgba(51,51,51,0.1)_30%,rgba(51,51,51,0.46)_100%)]" />
-                <div className="absolute left-5 top-5 rounded-full bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#333333] backdrop-blur">
-                  Avinell x Cantagali
-                </div>
-                <div className="absolute bottom-5 left-5 right-5 rounded-[18px] bg-[rgba(255,255,255,0.94)] p-4 backdrop-blur">
-                  <div className="text-xs uppercase tracking-[0.22em] text-[#64748b]">
-                    Focus
-                  </div>
-                  <p className="mt-2 text-lg font-medium text-[#333333]">
-                    Real estate, private equity, fund placements, and leasing &
-                    asset stabilization.
-                  </p>
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(34,34,34,0)_55%,rgba(34,34,34,0.46)_100%)]" />
+                <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4 text-white sm:bottom-7 sm:left-7 sm:right-7">
+                  <span className="text-[10px] font-semibold uppercase tracking-[0.28em] text-white/80">
+                    Avinell x Cantagali
+                  </span>
+                  <span className="hidden text-right text-sm font-medium text-white/90 sm:block">
+                    Real estate, capital, and opportunity
+                  </span>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
 
         <section
           id="about"
-          className="grid gap-8 px-1 py-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:px-2"
+          className="grid gap-8 bg-white px-1 py-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:px-2"
         >
           <div>
             <p className="text-sm uppercase tracking-[0.24em] text-[#64748b]">
@@ -201,90 +195,89 @@ export default function Home() {
           </div>
         </section>
 
-        <section
-          id="services"
-          className="grid items-start gap-6 lg:grid-cols-2"
-        >
-          <article className="overflow-hidden rounded-[24px] bg-[#f1f1f1] p-6 shadow-sm ring-1 ring-black/10">
-            <h3 className="text-3xl font-semibold tracking-[-0.03em] text-[#222222]">
-              Advise
-            </h3>
-            <p className="mt-5 text-sm leading-7 text-[#475569]">
-              We advise Nigerian asset owners, developers, investors, and
-              institutions at the earliest and most critical stages of the
-              capital cycle - where strategy, structure, and local context make
-              the difference.
-            </p>
-            <p className="mt-4 text-sm leading-7 text-[#475569]">
-              From sourcing and assessing opportunities across Nigeria&apos;s
-              major cities and emerging markets, to structuring compliant
-              investment vehicles and cross-border transactions, we combine deep
-              local market knowledge with global best practice.
-            </p>
-            <div className="mt-5 text-sm font-semibold uppercase tracking-[0.2em] text-[#64748b]">
-              Our advisory capabilities include:
+        <section id="services" className="border-t border-black/10 bg-white py-16 lg:py-20">
+          <div className="grid gap-12 lg:grid-cols-[0.32fr_0.68fr] lg:gap-16">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.28em] text-[#64748b]">
+                Our approach
+              </p>
+              <h2 className="mt-4 max-w-sm text-4xl font-semibold leading-[1.05] tracking-[-0.05em] text-[#222222] sm:text-5xl">
+                Advice that moves capital.
+              </h2>
+              <p className="mt-5 max-w-sm text-base leading-7 text-[#475569]">
+                From strategy to execution, we bring the right context and
+                discipline to each stage of the capital cycle.
+              </p>
             </div>
-            <ul className="mt-4 space-y-3 text-sm leading-6 text-[#475569]">
-              {advisoryBullets.map((bullet) => (
-                <li key={bullet} className="flex items-start gap-3">
-                  <span className="mt-2 h-2.5 w-2.5 rounded-full bg-[#333333]" />
-                  <span>{bullet}</span>
-                </li>
-              ))}
-            </ul>
-          </article>
 
-          <article className="rounded-[24px] bg-[#333333] p-6 text-white shadow-sm ring-1 ring-black/10">
-            <h3 className="text-3xl font-semibold tracking-[-0.03em]">Plan</h3>
-            <p className="mt-5 text-sm leading-7 text-white/78">
-              Clarity leads to confidence. At Avinell, we move beyond high-level
-              advice to co-design actionable plans - tailored to your capital
-              objectives.
-            </p>
-            <p className="mt-4 text-sm leading-7 text-white/78">
-              Whether you&apos;re preparing a capital raise, structuring a
-              deployment vehicle, or aligning multi-jurisdictional interests, we
-              translate strategy into a precise, step-by-step blueprint.
-            </p>
-            <div className="mt-6 text-sm font-semibold uppercase tracking-[0.2em] text-white/55">
-              Our planning capabilities include:
-            </div>
-            <ul className="mt-4 space-y-3 text-sm leading-6 text-white/80">
-              {planningBullets.map((bullet) => (
-                <li key={bullet} className="flex items-start gap-3">
-                  <span className="mt-2 h-2.5 w-2.5 rounded-full bg-[#ffd500]" />
-                  <span>{bullet}</span>
-                </li>
-              ))}
-            </ul>
-          </article>
+            <div className="border-t border-black/15">
+              <article className="grid gap-5 border-b border-black/15 py-8 sm:grid-cols-[56px_150px_1fr] sm:gap-6">
+                <div className="text-sm font-semibold tracking-[0.18em] text-[#64748b]">01</div>
+                <h3 className="text-2xl font-semibold tracking-[-0.04em] text-[#222222]">Advise</h3>
+                <div>
+                  <p className="text-sm leading-7 text-[#475569]">
+                    We advise Nigerian asset owners, developers, investors, and
+                    institutions at the earliest and most critical stages of the
+                    capital cycle - where strategy, structure, and local context
+                    make the difference.
+                  </p>
+                  <p className="mt-4 text-sm leading-7 text-[#475569]">
+                    We combine deep local market knowledge with global best
+                    practice across sourcing, assessment, compliant investment
+                    vehicles, and cross-border transactions.
+                  </p>
+                  <ul className="mt-5 grid gap-x-6 gap-y-2 text-sm leading-6 text-[#475569] sm:grid-cols-2">
+                    {advisoryBullets.map((bullet) => (
+                      <li key={bullet} className="flex items-start gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#333333]" />
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </article>
 
-          <article className="rounded-[24px] bg-[#333333] p-6 text-white shadow-sm ring-1 ring-black/10 lg:col-span-2">
-            <h3 className="text-3xl font-semibold tracking-[-0.03em]">
-              Execute
-            </h3>
-            <p className="mt-5 text-sm leading-7 text-white/78">
-              This is where capital moves - and results happen. At Avinell, we
-              activate our network to deliver on what&apos;s been strategically
-              designed and structurally planned.
-            </p>
-            <p className="mt-4 text-sm leading-7 text-white/78">
-              Whether deploying capital into prime opportunities, raising funds
-              for credible ventures, or disposing of assets for maximum return -
-              we coordinate, align, and execute with discipline.
-            </p>
-            <div className="mt-6 text-sm font-semibold uppercase tracking-[0.2em] text-white/55">
-              Our execution capabilities include:
+              <article className="grid gap-5 border-b border-black/15 py-8 sm:grid-cols-[56px_150px_1fr] sm:gap-6">
+                <div className="text-sm font-semibold tracking-[0.18em] text-[#64748b]">02</div>
+                <h3 className="text-2xl font-semibold tracking-[-0.04em] text-[#222222]">Plan</h3>
+                <div>
+                  <p className="text-sm leading-7 text-[#475569]">
+                    Clarity leads to confidence. We move beyond high-level advice
+                    to co-design actionable plans tailored to your capital
+                    objectives and the realities of the market.
+                  </p>
+                  <ul className="mt-5 grid gap-x-6 gap-y-2 text-sm leading-6 text-[#475569] sm:grid-cols-2">
+                    {planningBullets.map((bullet) => (
+                      <li key={bullet} className="flex items-start gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#ffd500]" />
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </article>
+
+              <article className="grid gap-5 py-8 sm:grid-cols-[56px_150px_1fr] sm:gap-6">
+                <div className="text-sm font-semibold tracking-[0.18em] text-[#64748b]">03</div>
+                <h3 className="text-2xl font-semibold tracking-[-0.04em] text-[#222222]">Execute</h3>
+                <div>
+                  <p className="text-sm leading-7 text-[#475569]">
+                    This is where capital moves and results happen. We activate
+                    our network to deliver on what has been strategically designed
+                    and structurally planned.
+                  </p>
+                  <ul className="mt-5 grid gap-x-6 gap-y-2 text-sm leading-6 text-[#475569] sm:grid-cols-2">
+                    {executionBullets.map((bullet) => (
+                      <li key={bullet} className="flex items-start gap-2">
+                        <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#ffd500]" />
+                        <span>{bullet}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </article>
             </div>
-            <ul className="mt-4 grid gap-3 text-sm leading-6 text-white/80 sm:grid-cols-2 lg:grid-cols-3">
-              {executionBullets.map((bullet) => (
-                <li key={bullet} className="flex items-start gap-3">
-                  <span className="mt-2 h-2.5 w-2.5 shrink-0 rounded-full bg-[#ffd500]" />
-                  <span>{bullet}</span>
-                </li>
-              ))}
-            </ul>
-          </article>
+          </div>
         </section>
 
         <section
@@ -382,7 +375,10 @@ export default function Home() {
               </p>
               <div className="mt-4 flex flex-col gap-3 text-sm text-white/75">
                 <a
-                  href="mailto:hello@avinellcantagali.com"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=hello%40avinellcantagali.com&su=Contact%20Avinell%20Cantagali"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Email Avinell Cantagali"
                   className="transition-colors hover:text-white"
                 >
                   hello@avinellcantagali.com
