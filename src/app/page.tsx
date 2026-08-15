@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import InsightsCarousel from '@/components/InsightsCarousel';
 import SiteHeader from '@/components/SiteHeader';
+import ScrollReveal from '@/components/ScrollReveal';
 
 const advisoryBullets = [
   'Nigeria-focused investment and capital strategy',
@@ -106,6 +107,7 @@ export default function Home() {
         </div>
 
         <div className="relative w-full px-4 pt-6 sm:px-6 lg:px-8">
+          <ScrollReveal>
           <section className="pt-6 lg:pt-8">
             <div className="overflow-hidden rounded-[28px] bg-white px-5 pb-5 pt-10 shadow-[inset_0_1px_0_rgba(255,255,255,0.9)] sm:px-8 sm:pb-8 sm:pt-12 lg:px-12 lg:pb-10 lg:pt-14">
               <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
@@ -167,7 +169,9 @@ export default function Home() {
               </div>
             </div>
           </section>
+          </ScrollReveal>
 
+        <ScrollReveal>
         <section
           id="about"
           className="grid gap-8 bg-white px-1 py-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-start lg:px-2"
@@ -195,7 +199,9 @@ export default function Home() {
             </p>
           </div>
         </section>
+        </ScrollReveal>
 
+        <ScrollReveal>
         <section id="services" className="border-t border-black/10 bg-white py-16 lg:py-20">
           <div className="grid gap-12 lg:grid-cols-[0.32fr_0.68fr] lg:gap-16">
             <div>
@@ -280,7 +286,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+        </ScrollReveal>
 
+        <ScrollReveal>
         <section
           id="capital"
           className="mt-6 rounded-[24px] bg-[#333333] px-6 py-8 text-white shadow-[0_16px_40px_rgba(51,51,51,0.18)] sm:px-8"
@@ -338,7 +346,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+        </ScrollReveal>
 
+        <ScrollReveal>
         <section id="insights" className="py-16">
           <div className="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
             <div>
@@ -357,6 +367,7 @@ export default function Home() {
 
           <InsightsCarousel cards={insightCards} />
         </section>
+        </ScrollReveal>
 
         <footer
           id="contact"
