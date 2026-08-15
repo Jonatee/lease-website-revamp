@@ -123,7 +123,7 @@ export default function VisionPage() {
           </div>
           <div className="relative min-h-[360px] overflow-hidden rounded-[24px] bg-[#333333] lg:min-h-[520px]">
             <Image
-              src="/images/Advisory.jpg"
+              src="/images/downloaded-lagos-cityscape.jpg"
               alt="Avinell capital advisory team"
               fill
               sizes="(min-width: 1024px) 55vw, 100vw"

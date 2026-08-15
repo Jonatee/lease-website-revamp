@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
 import SiteHeader from '@/components/SiteHeader';
 
 type DealFilter = 'all' | 'to-let' | 'for-sale' | 'finance';
@@ -13,8 +12,7 @@ type Deal = {
   location: string;
   price: string;
   amenities: string[];
-  image: string;
-  alt: string;
+  icon: string;
 };
 
 const deals: Deal[] = [
@@ -25,8 +23,7 @@ const deals: Deal[] = [
     location: 'Victoria Island, Lagos',
     price: 'NGN 7,000 / hour',
     amenities: ['Parking', 'AC'],
-    image: '/images/Advisory.jpg',
-    alt: 'Boardroom interior for Testmot House',
+    icon: '◫',
   },
   {
     title: 'Campos Square Office Floor',
@@ -35,8 +32,7 @@ const deals: Deal[] = [
     location: 'Lagos Island',
     price: 'NGN 50,000,000 / year',
     amenities: ['Parking', 'AC'],
-    image: '/images/sincerely-media-7QFks1kY5ts-unsplash-1.jpg.jpeg',
-    alt: 'Office space at Campos Square',
+    icon: '▦',
   },
   {
     title: 'Encounter House Event Centre',
@@ -45,8 +41,7 @@ const deals: Deal[] = [
     location: 'Magodo GRA, Lagos',
     price: 'NGN 150,000 / day',
     amenities: ['Parking', '200 Chairs', 'AC'],
-    image: '/images/Peckham-1-1.jpeg',
-    alt: 'Event venue for Encounter House',
+    icon: '◇',
   },
   {
     title: 'Eko Court Co-Working',
@@ -55,8 +50,7 @@ const deals: Deal[] = [
     location: 'Victoria Island, Lagos',
     price: 'NGN 27,000,000 / year',
     amenities: ['Parking', 'AC'],
-    image: '/images/Commercial-Retrofit-in-London-Transforming-Buildings-for-a-Sustainable-Future_2.jpg',
-    alt: 'Flexible office space at Eko Court',
+    icon: '⌘',
   },
   {
     title: 'Plot 22 Breadfruit Street',
@@ -65,8 +59,7 @@ const deals: Deal[] = [
     location: 'Lagos Island',
     price: 'NGN 165,000,000',
     amenities: ['Land'],
-    image: '/images/Monaco-Commercial-Real-Estate-Office-Outlook-2024_1.jpg',
-    alt: 'Commercial property opportunity at Plot 22 Breadfruit Street',
+    icon: '△',
   },
 ];
 
@@ -159,8 +152,10 @@ export default function ActiveDealsPage() {
                       ? 'border-[#333333] shadow-[0_14px_35px_rgba(51,51,51,0.12)]'
                       : 'border-black/10 hover:-translate-y-0.5 hover:border-[#333333]/35 hover:shadow-[0_10px_25px_rgba(51,51,51,0.08)]'}`}
                   >
-                    <div className="relative h-44 shrink-0 overflow-hidden rounded-[14px] bg-[#f0f0f0] sm:h-[140px] sm:w-[180px]">
-                      <Image src={deal.image} alt={deal.alt} fill sizes="(min-width: 640px) 180px, 100vw" className="object-cover transition-transform duration-300 group-hover:scale-[1.03]" />
+                    <div className="flex h-44 shrink-0 items-center justify-center overflow-hidden rounded-[14px] bg-[#f7f8f9] sm:h-[140px] sm:w-[180px]">
+                      <span className="flex h-20 w-20 items-center justify-center rounded-[22px] border border-[#ffd500]/45 bg-white text-5xl font-light text-[#333333] shadow-[0_10px_24px_rgba(51,51,51,0.08)] transition-transform duration-300 group-hover:scale-105" aria-hidden>
+                        {deal.icon}
+                      </span>
                     </div>
                     <div className="flex min-w-0 flex-1 flex-col py-1 sm:py-2">
                       <div className="flex items-center justify-between gap-4">
@@ -201,16 +196,11 @@ export default function ActiveDealsPage() {
 
           <aside className="lg:sticky lg:top-24 lg:self-start">
             <div className="relative min-h-[460px] overflow-hidden rounded-[24px] bg-[#333333] sm:min-h-[560px]">
-              <Image
-                key={selectedDeal.image}
-                src={selectedDeal.image}
-                alt={selectedDeal.alt}
-                fill
-                sizes="(min-width: 1024px) 50vw, 100vw"
-                className="object-cover transition-opacity duration-300"
-                priority
-              />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(51,51,51,0.05),rgba(51,51,51,0.78))]" />
+              <div className="absolute inset-0 flex items-center justify-center bg-[radial-gradient(circle_at_center,#4b4b4b_0%,#333333_62%)]">
+                <span className="flex h-32 w-32 items-center justify-center rounded-[34px] border border-[#ffd500]/50 bg-[#333333] text-8xl font-light text-[#ffd500] shadow-[0_20px_60px_rgba(0,0,0,0.28)]" aria-hidden>
+                  {selectedDeal.icon}
+                </span>
+              </div>
               <div className="absolute left-5 top-5 rounded-full bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-[#333333]">
                 Featured opportunity
               </div>

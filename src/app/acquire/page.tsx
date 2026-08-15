@@ -170,7 +170,7 @@ export default function AcquirePage() {
 
           <div className="relative min-h-[380px] overflow-hidden rounded-[24px] bg-[#333333] lg:min-h-[560px]">
             <Image
-              src="/images/Advisory.jpg"
+              src="/images/downloaded-corporate-office.jpg"
               alt="Avinell acquisition and real estate repositioning advisory"
               fill
               sizes="(min-width: 1024px) 50vw, 100vw"

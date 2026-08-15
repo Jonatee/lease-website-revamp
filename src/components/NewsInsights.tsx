@@ -30,7 +30,7 @@ const articles = [
   {
     title: 'Maximizing Hotel Yield in Lagos, Nigeria: Strategies for Success in a Dynamic Market',
     href: '/insights/maximizing-hotel-yield-in-lagos-nigeria-strategies-for-success-in-adynamic-market/',
-    image: '/images/Maximizing-Hotel-Yield-in-Lagos.jpg',
+    image: '/images/downloaded-lagos-aerial.jpg',
     category: 'Articles',
   },
   {

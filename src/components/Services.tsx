@@ -94,7 +94,7 @@ export default function Services() {
                   <div className="content-wrapper">
                     <div className="image-container">
                       <div className="services-img">
-                        <img src="/images/Advisory.jpg" alt="Avinell Services" />
+                        <img src="/images/downloaded-development-plans.jpg" alt="Avinell Services" />
                       </div>
                     </div>
                   </div>

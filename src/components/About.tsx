@@ -20,7 +20,7 @@ export default function About() {
           </div>
           <div>
             <img
-              src="/images/Advisory.jpg"
+              src="/images/downloaded-lagos-aerial.jpg"
               alt="Avinell Advisory"
               className="w-full h-[500px] object-cover rounded-2xl"
             />

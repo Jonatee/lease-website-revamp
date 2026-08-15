@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const heroSlides = [
   {
-    src: '/images/sincerely-media-7QFks1kY5ts-unsplash-1.jpg.jpeg',
+    src: '/images/downloaded-boardroom.jpg',
     label: 'Capital Advisory',
   },
 ];

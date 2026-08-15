@@ -14,7 +14,7 @@ export default function WhyChooseUs() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div>
             <img
-              src="/images/Advisory.jpg"
+              src="/images/downloaded-boardroom.jpg"
               alt="Why Avinell"
               className="w-full h-[500px] object-cover rounded-2xl"
             />

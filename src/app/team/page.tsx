@@ -147,7 +147,7 @@ export default function TeamPage() {
 
           <div className="relative min-h-[480px] overflow-hidden rounded-[24px] bg-[#333333] lg:min-h-0">
             <Image
-              src="/images/Advisory.jpg"
+              src="/images/downloaded-leadership-meeting.jpg"
               alt="Avinell team advisory environment"
               fill
               sizes="(min-width: 1024px) 52vw, 100vw"

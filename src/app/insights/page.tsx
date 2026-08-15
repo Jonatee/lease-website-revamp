@@ -66,7 +66,7 @@ const articles = [
     title: 'Maximizing Hotel Yield in Lagos, Nigeria: Strategies for Success in a Dynamic Market',
     category: 'Lagos Market',
     excerpt: 'Strategies for improving hotel yield, positioning hospitality assets, and responding to local demand.',
-    image: '/images/Maximizing-Hotel-Yield-in-Lagos.jpg',
+    image: '/images/downloaded-lagos-aerial.jpg',
     href: 'https://avinellcantagali.com/insights/maximizing-hotel-yield-in-lagos-nigeria-strategies-for-success-in-adynamic-market/',
   },
 ];

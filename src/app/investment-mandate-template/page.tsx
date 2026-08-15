@@ -188,7 +188,7 @@ export default function InvestmentMandatePage() {
             <a href="#mandate" className="mt-8 inline-flex w-fit rounded-full bg-[#ffd500] px-6 py-3.5 text-sm font-semibold text-[#333333] shadow-[0_12px_30px_rgba(255,213,0,0.22)] transition-transform duration-200 hover:-translate-y-0.5">Submit your investment mandate</a>
           </div>
           <div className="relative min-h-[360px] overflow-hidden rounded-[20px] bg-[#333333]">
-            <Image src="/images/Advisory.jpg" alt="Avinell investment mandate advisory" fill className="object-cover opacity-85" sizes="(max-width: 1024px) 100vw, 45vw" />
+            <Image src="/images/downloaded-meeting-room.jpg" alt="Avinell investment mandate advisory" fill className="object-cover opacity-85" sizes="(max-width: 1024px) 100vw, 45vw" />
             <div className="absolute inset-x-5 bottom-5 rounded-2xl bg-white/90 p-5 backdrop-blur-md">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#64748b]">Avinell Investment Mandate</p>
               <p className="mt-2 text-lg font-semibold leading-7 text-[#222222]">Confidential investor intake for capital deployment.</p>

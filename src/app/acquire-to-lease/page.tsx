@@ -125,7 +125,7 @@ export default function AcquireToLeasePage() {
             </div>
           </div>
           <div className="relative min-h-[360px] overflow-hidden rounded-[20px] bg-[#333333] lg:min-h-[500px]">
-            <Image src="/images/Advisory.jpg" alt="Avinell income-focused property acquisition" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 45vw" priority />
+            <Image src="/images/downloaded-property-investment.jpg" alt="Avinell income-focused property acquisition" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 45vw" priority />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(51,51,51,0.04),rgba(51,51,51,0.72))]" />
             <div className="absolute bottom-5 left-5 right-5 rounded-[18px] bg-white/95 p-5">
               <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#64748b]">Income strategy</p>

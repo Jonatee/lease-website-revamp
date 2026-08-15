@@ -107,7 +107,7 @@ function ServiceImage() {
   return (
     <div className="relative min-h-[440px] overflow-hidden rounded-[24px] bg-[#333333] lg:sticky lg:top-8 lg:min-h-[calc(100vh-120px)]">
       <Image
-        src="/images/Advisory.jpg"
+        src="/images/downloaded-development-plans.jpg"
         alt="Avinell capital advisory services"
         fill
         sizes="(min-width: 1024px) 48vw, 100vw"

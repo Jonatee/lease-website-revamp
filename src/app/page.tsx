@@ -70,7 +70,7 @@ const insightCards = [
   },
   {
     title: 'Maximizing Hotel Yield in Lagos, Nigeria: Strategies for Success in aDynamic Market',
-    image: '/images/Maximizing-Hotel-Yield-in-Lagos.jpg',
+    image: '/images/downloaded-lagos-aerial.jpg',
     href: 'https://avinellcantagali.com/insights/maximizing-hotel-yield-in-lagos-nigeria-strategies-for-success-in-adynamic-market/',
   },
 ];
@@ -148,7 +148,7 @@ export default function Home() {
 
               <div className="relative mt-8 aspect-[4/3] overflow-hidden rounded-[22px] bg-[#333333] shadow-[0_18px_50px_rgba(51,51,51,0.16)] sm:mt-10 sm:aspect-[16/8] lg:mt-12">
                 <Image
-                  src="/images/Advisory.jpg"
+                  src="/images/downloaded-boardroom.jpg"
                   alt="Commercial real estate advisory meeting room"
                   fill
                   priority
