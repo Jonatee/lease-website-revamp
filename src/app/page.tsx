@@ -109,7 +109,8 @@ export default function Home() {
           <section className="pt-6 lg:pt-8">
             <div className="overflow-hidden rounded-[28px] bg-white px-5 pb-5 pt-10 shadow-[inset_0_1px_0_rgba(255,255,255,0.9)] sm:px-8 sm:pb-8 sm:pt-12 lg:px-12 lg:pb-10 lg:pt-14">
               <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-                <span className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[#64748b]">
+                <span className="inline-flex items-center gap-2 rounded-full border border-[#333333]/10 bg-[#f7f8f9] px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.28em] text-[#64748b] shadow-[0_6px_18px_rgba(51,51,51,0.06)]">
+                  <span className="h-2 w-2 rounded-full bg-[#ffd500] shadow-[0_0_0_3px_rgba(255,213,0,0.18)]" aria-hidden />
                   Capital Advisory | Lagos
                 </span>
                 <h1 className="mt-5 max-w-3xl text-4xl font-semibold leading-[1] tracking-[-0.06em] text-[#222222] sm:text-5xl lg:text-6xl">
